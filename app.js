@@ -13,23 +13,23 @@ function playRound() {
     const computerSelection = computerPlay();
         
     if (playerSelection == 'rock' && computerSelection == 'paper') {
-            return ('You lose!');
+            return (`You lose! ${computerSelection} beats ${playerSelection}.`);
         } else if (playerSelection == 'rock' && computerSelection == 'scissors') {
-                return ('You win!');
+                return (`You win! ${playerSelection} beats ${computerSelection}.`);
         } else if (playerSelection == 'rock' && computerSelection == 'rock') {
-                return ('Tie!');
+                return (`Tie! You both chose ${playerSelection}.`);
         } else if (playerSelection == 'paper' && computerSelection == 'paper') {
-                return ('Tie!');
+                return (`Tie! You both chose ${playerSelection}.`);
         } else if (playerSelection == 'paper' && computerSelection == 'scissors') {
-                return ('You lose!');
+                return (`You lose! ${computerSelection} beats ${playerSelection}.`);
         } else if (playerSelection == 'paper' && computerSelection == 'rock') {
-                return ('You win!');
+                return (`You win! ${playerSelection} beats ${computerSelection}.`);
         } else if (playerSelection == 'scissors' && computerSelection == 'paper') {
-                return ('You win!');
+                return (`You win! ${playerSelection} beats ${computerSelection}.`);
         } else if (playerSelection == 'scissors' && computerSelection == 'scissors') {
-                return ('Tie!');
+                return (`Tie! You both chose ${playerSelection}.`);
         } else if (playerSelection == 'scissors' && computerSelection == 'rock') {
-                return ('You lose!');
+                return (`You lose! ${computerSelection} beats ${playerSelection}.`);
         }
     }
     
